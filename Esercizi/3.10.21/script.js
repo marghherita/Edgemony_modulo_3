@@ -8,25 +8,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const render = (container, items) => {
         const elements = items.map((element) => {
             if (element.completed === true) {
-                return ` <input type="checkbox" id="completed" name="completed" checked>
-                         <label id="title" for="completed">${element.title}</label>`
+                return `<li> 
+                            <input type="checkbox" id="completed" name="completed" checked>
+                            <label id="title" for="completed">${element.title}</label> 
+                        </li>`
             } else {
-                return ` <input type="checkbox" id="completed" name="completed">
-                         <label id="title" for="completed">${element.title}</label>`
+                return `<li>
+                            <input type="checkbox" id="completed" name="completed">
+                            <label id="title" for="completed">${element.title}</label> 
+                        </li>`
             }
         }
 
         );
 
-        const output = elements.join('');
+        const content = elements.join('');
 
         btn.addEventListener("click", () => {
             elements.pop('')
-            const output = elements.join('');
-            container.innerHTML = output;
+            const content = elements.join('');
+            container.innerHTML = content;
         });
 
-        container.innerHTML = output;
+        container.innerHTML = content;
 
     };
-
