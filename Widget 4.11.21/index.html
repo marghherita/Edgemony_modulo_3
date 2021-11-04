@@ -14,10 +14,18 @@
             <h1>Widget contatti in Javascript</h1>
         </header>
 
-        <form>
+        <form id="formOne">
             <label for="search">Cerca tra i contatti:</label>
             <input type="text" name="search" id="search" required placeholder="es: pippo" autocomplete="off">
             <button>Cerca</button>
+        </form>
+
+        <form id="formAdd">
+            <label for="submit">Aggiungi un contatto:</label>
+            <input type="text" name="submit" id="fname" placeholder="name" autocomplete="off">
+            <input type="text" name="submit" id="phone" placeholder="phone" autocomplete="off">
+            <input type="text" name="submit" id="email" placeholder="email" autocomplete="off">
+            <button>+</button>
         </form>
 
         <ul>
@@ -32,7 +40,7 @@
     
 
     <script src="data.js"></script>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 <!-- </section> -->
 </html>
