@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+header h3 span {
+    color: cadetblue;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+#container {
+    border-bottom: 2px solid #000;
+}
+
+
+header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 150px;
+    border-bottom: 2px solid ;
+    border-color: black;
+}
+
+/* dark mode */
+
+.btnDarkMode {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    z-index: 100;
+    
+}
+
+.iconStyle {
+    width: 20px;
+    height: 20px;
+}
+
+.darkMode {
+    background: #212121;
+    color: white;
+}
+
+.darkMode header {
+    border-bottom: 2px solid #fff;
+}
+
+
+/* container */
+
+#container {
+    padding: 150px;
+
+}
+
+.containerOne {
+    margin-bottom: 80px;
+    margin-left: 50px;
+}
+
+.btnLight {
+    cursor: pointer;
+    border: none;
+    background: cadetblue;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin: 75px 20px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.btnLightEnable {
+    background: wheat;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+
+.containerTwo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+
+
+
+#circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    
+}
+
+.colorOne {
+    background: cadetblue
+}
+
+.colorTwo {
+    background: cornflowerblue
+}
