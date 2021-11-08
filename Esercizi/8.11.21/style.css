@@ -155,7 +155,7 @@ footer a {
     border-radius: 16px;
     box-shadow: 0 0 16px black;
     background: rgb(43, 43, 43);
-    color: rgb(240, 240, 240);
+    color: #fff;
   
     transition: opacity 0.35s;
 
@@ -177,7 +177,7 @@ footer a {
   .modal p {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    color: rgb(169, 169, 169);
+    color: #fff;
     padding: 10px 20px;
     font-size: 0.8rem;
     text-align: center;
@@ -189,50 +189,104 @@ footer a {
   }
   
   .modal__buttons {
-    width: 200px;
-    height: 30px;
-    display: flex;
-    margin: 20px;;
-  }
-  
-  .modal__buttons button {
-    margin: auto;
-    padding: 7.5px 15px;
-    border-radius: 6px;
-    color: white;
-    font-weight: bold;
-    font-size: 0.8rem;
-    cursor: pointer;
-  }
-  
-  #btn-accept {
-    border: 0;
-    background: lightseagreen;
-    opacity: 0.6;
-    transition: all 0.35s;
-  }
-  
-  #btn-accept:hover {
-    opacity: 1;
-  }
-  
-  #btn-accept:active {
-    opacity: 1;
-    background: lightskyblue;
-  }
-  
-  #btn-deny {
-    border: 0;
-    background: lightcoral;
-    opacity: 0.6;
-    transition: all 0.35s;
-  }
+      width: 200px;
+      height: 30px;
+      display: flex;
+      margin: 20px;;
+    }
+    
+    .modal__buttons button {
+        margin: auto;
+        padding: 7.5px 15px;
+        border-radius: 6px;
+        color: white;
+        font-weight: bold;
+        font-size: 0.8rem;
+        cursor: pointer;
+    }
+    
+    #btn-accept {
+        border: 0;
+        background: lightseagreen;
+        opacity: 0.6;
+        transition: all 0.35s;
+    }
+    
+    #btn-accept:hover {
+        opacity: 1;
+    }
+    
+    #btn-accept:active {
+        opacity: 1;
+        background: lightskyblue;
+    }
+    
+    #btn-deny {
+        border: 0;
+        background: lightcoral;
+        opacity: 0.6;
+        transition: all 0.35s;
+    }
+    
+    #btn-deny:hover {
+        opacity: 1;
+    }
+    
+    #btn-deny:active {
+        opacity: 1;
+        background: lightskyblue;
+    }
+    
+    
+    /* MONKEY MODAL */
 
-  #btn-deny:hover {
-    opacity: 1;
-  }
-  
-  #btn-deny:active {
-    opacity: 1;
-    background: lightskyblue;
-  }
+    .monkeys-modal {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+        
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        border-radius: 16px;
+        border-color:#20C20E;
+        box-shadow: 0 0 16px #20C20E;
+        background: black;
+        color: rgb(240, 240, 240);
+        
+        transition: opacity 0.35s;
+        
+        margin-bottom: 150px;
+    }
+
+
+    .monkeys-modal img {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      width: 50px;
+      padding-bottom: 10px;
+      margin: auto;
+    }
+
+    .monkeys-modal h3 {
+        font-family: monospace, sans-serif;
+        color: #20C20E;
+        font-weight: 700;
+        padding: 10px 20px;
+        font-size: 1.6rem;
+        text-align: center;
+        
+      }
+      
+      .monkeys-modal h2 {
+        font-family: monospace, sans-serif;
+        font-weight: 500;
+        color: #20C20E;
+        padding: 10px 20px;
+        font-size: 1rem;
+        text-align: center;
+      }
