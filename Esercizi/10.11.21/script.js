@@ -32,6 +32,8 @@ btnSendEl.addEventListener("click", (evt) => {
     userPage.style.display = "block";
     document.body.removeChild(modalEl);
 
+
+
     // userPage.firstElementChild.textContent = "Test";
     userPage.firstElementChild.textContent.replace("NOME", user.username);
     sendCredentials(user.username);

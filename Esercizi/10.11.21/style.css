@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 * {
     font-family: "poppins", sans-serif;
     box-sizing: border-box;
@@ -17,9 +18,21 @@ body {
     margin: 50px 0;
 }
 
+.nome,
+.date {
+    color: #2EE59D;
+    letter-spacing: 2.5px;
+}
+
 .username,
 .password {
     margin: 10px 0;
+}
+
+label {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
 }
 
 .modal {
@@ -43,7 +56,7 @@ body {
 .btn {
     display: flex;
     justify-content: center;
-    margin: 50px;
+    margin: 40px;
 }
 
 button {
