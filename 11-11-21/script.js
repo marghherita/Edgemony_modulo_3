@@ -51,14 +51,13 @@ function renderProducts(parent) {
 
 // PROVA 
 
-// btnOne.addEventListener("click", () => {
-//     const titleTwo = (products.sort((a, b) => a.title.localeCompare(b.title)));
-//     titleTwo.map((product) => {
-//         createProduct(parent, product.image, product.title, product.price);
-//     });
+btnOne.addEventListener("click", () => {
+    const titleTwo = (products.sort((a, b) => a.title.localeCompare(b.title)));
+    titleTwo.map((product) => {
+        createProduct(parent, product.image, product.title, product.price);
+    });
 
-// })
-
+})
 
 renderProducts(wrapperProductsOne);
 renderProducts(wrapperProductsTwo);
